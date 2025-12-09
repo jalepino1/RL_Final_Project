@@ -3,10 +3,7 @@
 Tested with Python 3.12 + packages from requirements.txt (installed globally).
 On some macOS setups, a venv with LightGBM/OpenMP may cause a segmentation fault; using a global env or rebuilding LightGBM fixes it.
 
-
-============================================================
 RL FINAL PROJECT - LIMITED-BUDGET HYPERPARAMETER OPTIMIZATION
-============================================================
 
 This project implements a Reinforcement Learning (RL) approach for
 hyperparameter optimization of a LightGBM forecasting model using a
@@ -23,33 +20,6 @@ The system includes:
    and stability adjustments
 
 The executable entry point is `src/main.py`.
-
-------------------------------------------------------------
-PROJECT STRUCTURE
-------------------------------------------------------------
-
-RL_Final_Project/
- |
- ├── data/
- │    └── train.csv               # Dataset used for example
- |
- ├── results/                     # contains results given from every execution of main.py
- │  
- ├── src/
- │    ├── __init__.py             # Makes src a Python package
- │    ├── main.py                 # EXECUTABLE: Runs RL + Grid Search
- │    ├── agent.py                # DQN agent implementation
- │    ├── data_loader.py          # Loads and processes dataset
- │    ├── env.py                  # Custom RL environment
- │    ├── search.py               # Search algorithms + comparison
- │    
- |
- ├── notebooks/
- │    └── RL_Implementation.ipynb   # Development notebook
- |
- ├── requirements.txt
- └── readme.txt (this file)
-
 
 ------------------------------------------------------------
 HOW TO RUN THE PROJECT
